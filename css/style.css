@@ -1,47 +1,64 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    display: flex ;
     font-family: 'Helvetica';
-    min-width: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    min-height: 100vh;
 }
 
 header, footer {
     display: flex;
-    background-color: darkblue;
+    background-color: #778899;
     align-items: center;
     flex-direction: row;
-    color: whitesmoke;
+    color: white;
+    height: 60px;
     width: 100%;
-    text-align: center;
-
 }
 
 header {
     justify-content: space-evenly;
-    box-shadow: 1px 3px 3px 1px darkgray;
+    box-shadow: 1px 3px 3px 1px lightgray;
 }
 
-.button {
+footer {
+    justify-content: center;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px 0 20px 0;
+}
+
+main section:nth-child(2) {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#calculator {
+    display:flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.square {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
     width: 150px;
-
+    font-size: 100px;
+    font-weight: 500;
+    border: 2px solid black;
 }
 
-.button:hover {
-    background-color: yellow;
-}
-
-.topleft = {
-    border-top: 3px solid black;
+.square:hover {
+    background-color: gray;
 }
